@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="modal-placeholder"></div>
+
+<button class="btn btn-primary m-3" id="btnCreate" type="button" data-toggle="ajax-modal" data-url="@Url.Page("Index", "CreateBookPartial")">CREATE</button>
+
+<div id="viewAll" class="card-body table-responsive"></div>
